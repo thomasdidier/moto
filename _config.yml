@@ -2,3 +2,4 @@ theme: "totoo"
 url: "#" # the hostname & protocol for site
 plugins:
    - jekyll-sitemap
+   - jekyll-admin

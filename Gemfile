@@ -10,6 +10,7 @@ gem "jekyll", "~> 3.4"
 # Any plugins I'm using
 group :jekyll_plugins do
   gem "jekyll-sitemap"
+  gem "jekyll-admin"
 
 end
 

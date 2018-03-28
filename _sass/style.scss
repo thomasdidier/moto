@@ -9,11 +9,23 @@
 
 h1{
 	text-align:center;
-	padding-bottom:200px;
+	max-width:600px;
+	margin:0 auto;
+	margin-top:200px;
+	margin-bottom:200px;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+	border:1px solid #fff;
+	border-radius:8px;
 }
 .bar{
 	text-align:center;
-	margin-bottom:200px;
+	
 	
 	background-color: rgba(0,0,0,0.70);
 }	
@@ -22,13 +34,13 @@ h1{
 	padding: 10px 50px 10px 50px;
 
 	&:hover{
-		background-color:rgba(255,255,255,0.3);
+		background-color: rgba(255,255,255,0.3);
 	}
 
 }
 
 #maxvideo{
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	min-width:100%;
@@ -40,13 +52,14 @@ h1{
 }
 
 .position{
-	position: absolute;
+	position: fixed;
 	z-index:-1000;
 	width: 100%;
-	height: 50%;
+	height: 100%;
 	overflow: hidden;
 	top:0;
 	left:0;
+	
 }
 
 
@@ -58,6 +71,37 @@ h1{
 
 //section post
 
-h2{
+
+
+.home{
+	background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+
+
+	margin: 0 auto;
+	
+}
+
+.home h2{
 	text-align: center;
+	padding-top:100px;
+	padding-bottom:100px;
+	color:#fff;
+	font-size:42px;
+
+}
+
+.post-list{
+	text-align:center;
+	margin-left:-45px;
+	padding-bottom:100px;
+}
+
+li{
+	list-style:none;
 }
