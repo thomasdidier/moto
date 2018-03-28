@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
- 	{% head.html %}
+ 
+ {% include head.html %}
+
 <body>
 
-	{% header.html %}
+{% include header.html %}
 
+<section class="post">
+	<h2>Post</h2>
+	{{ content }}
+</section>
 </body>
 </html>
