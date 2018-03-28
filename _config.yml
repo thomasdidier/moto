@@ -1,5 +1,5 @@
 theme: "totoo"
-url: "#" # the hostname & protocol for site
+url: "https://thomasdidier.github.io/moto/" # the hostname & protocol for site
 plugins:
    - jekyll-sitemap
    - jekyll-admin
