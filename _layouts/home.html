@@ -15,11 +15,11 @@
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading animated fadeInUp">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">Posts</h2>
   
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <li class="animated fadeInUp">
+      <li class="animated">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
