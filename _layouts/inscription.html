@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+	<html>
+ 
+<head>
+  <link rel="stylesheet" href="{{ "assets/bootstrap.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relative_url }}">
+  <title>Document</title>
+</head>
+	<body>
+
+		<!--header-->
+		{% include header.html %}
+
+			
+				<div class="home">
+
+  			<h2>Inscription</h2>
+
+  			<section class="formulaire">
+
+  			<form class="col-md-offset-4 form-background" action="" method="">
+  				<table>
+  					<tr>
+  						<th>nom : </th>
+  						<td><input type="text" value="" ></td>
+  					</tr>
+ 
+  					<tr>
+  						<th>prenom : </th>
+  						<td><input type="text" value=""></td>
+  					</tr>
+
+  					<tr>
+  						<th>age : </th>
+  						<td><input type="number" value="">ans</td>
+  					</tr>
+
+  					<tr>
+  						<th>telephone : </th>
+  						<td><input type="number" value=""></td>
+  					</tr>
+ 
+  					<tr>
+  						<th>adresse : </th>
+  						<td><textarea></textarea></td>
+  					</tr>
+  				
+  					<tr>
+  						<th>login : </th>
+  						<td><input type="text" value=""></td>
+  					</tr>
+  				
+  				
+  					<tr>
+  						<th>mot de passe : </th>
+  						<td><input type="password" value=""></td>
+  					</tr>
+
+  					<tr>
+  						<th></th>
+  						<td><input type="submit" value="Inscitpition"></td>
+  					</tr>
+  				</table>
+ 
+  			</form>
+
+  		</section>
+  		{{ content }}	
+  			
+
+</div>
+</section>

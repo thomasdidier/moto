@@ -8,11 +8,39 @@ layout: default
 
 <body>
 
+<!--header-->
 {% include header.html %}
 
-<section class="post">
-	<h2>Post</h2>
-	{{ content }}
+<section>
+<div class="home">
+  
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading animated fadeInUp">{{ page.list_title | default: "Posts" }}</h2>
+  
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="animated fadeInUp">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+ 
+  {%- endif -%}
+
+</div>
 </section>
-</body>
-</html>
+
+{% include footer.html %}
