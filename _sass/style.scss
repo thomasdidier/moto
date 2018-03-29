@@ -100,7 +100,7 @@ background-size:16px 16px;
 }
 
 .home{
-	padding-bottom:100px;
+	padding-bottom:200px;
 }
 
 
@@ -166,5 +166,52 @@ background-color: #fff;
 		padding-bottom:15px;
 	}
 
+}
+
+// contenu de post
+
+.content-post{
+	color:#000;
+	background-color:#ffebb7;
+	max-width:720px;
+	margin:0 auto;
+	text-align: center;
+	padding-top:100px;
+	padding-bottom:100px;
+	border-radius:8px;
+
+}
+
+//footer 
+
+footer{
+	padding-top:15px;
+	padding-bottom:30px;
+	background-color:#808e9b;
+}
+
+h3{
+	text-align:center;
+	padding-bottom:15px;
+}
+
+.icon-social{
+	text-align: center;
+}
+
+.icon-social > li{
+	display:inline-block;
+	width:200px;
+	font-size:75px;
+}
+
+.icon-social a{
+	text-decoration:none;
+	color:#fff;
+
+	&:hover{
+		color:#000;
+		transition: 1s;
+	}
 }
 

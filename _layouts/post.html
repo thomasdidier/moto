@@ -17,7 +17,7 @@ layout: default
 	<div class="position">
 		<video id="maxvideo" 
 			er="video.jpg" preload="auto" autoplay="true" loop="loop">
-			<source src="{{'video.mp4' | relative_url}}" type="video/mp4">
+			<source src="{{'/video.mp4' | relative_url}}" type="video/mp4">
 		</video>
 	</div>
 	
@@ -44,12 +44,12 @@ layout: default
 <div class="home">
   
 
-  {{ content }}
+  
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">Posts</h2>
   
-
+  <div class="content-post">{{ content }}</div>
 
  
   {%- endif -%}
@@ -58,3 +58,6 @@ layout: default
 </section>
 
 {% include footer.html %}
+
+
+
