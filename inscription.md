@@ -1,0 +1,5 @@
+---
+title: Insciption
+layout: inscription
+---
+

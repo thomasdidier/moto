@@ -1,5 +1,0 @@
----
-title: qsdfqs
-layout: inscription
----
-

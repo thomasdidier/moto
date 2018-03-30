@@ -2,9 +2,11 @@
 <html>
  
  <head>
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
   <link rel="stylesheet" href="/assets/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+ 
   <title>Document</title>
 </head>
 
@@ -23,19 +25,22 @@
 
 
 	
-	<div class="title">
-		<ul class="bar">
-			<li><a class="col-md-2" href="/index.html">Home</a></li>
-			<li><a class="col-md-2" href="#">home</a></li>
-			<li><a class="col-md-2" href="#">home</a></li>
-			<li><a class="col-md-2" href="/qsfqdsgsdg.html">Inscription</a></li>
-			<li><a class="col-md-2" href="#">home</a></li>
+	<nav>
+		<div class="toggle">
+			<i class="ion-navicon menu"></i>
+		</div>
+		<ul class="bar animated bounceInLeft" id="top">
+			<li><a class="#" href="/index.html">Home</a></li>
+			<li><a class="#" href="/Images.html">images</a></li>
+			<li><a class="" href="/video.html">Video</a></li>
+			<li><a class="#" href="/inscription.html">Inscription</a></li>
+			<li><a class="#" href="/login.html">Login</a></li>
 		</ul>
 
-	</div>
-
+	</nav>
+<a href="#bottom"><i class="ion-ios-arrow-down"></i></a>
 	<div>
-		<h1>L'histoire de la moto</h1>
+		<h1 class="animated bounce zoomIn"><i class="ion-ios-speedometer"></i> L'histoire de la moto <i class="ion-ios-speedometer"></i></h1>
 	</div>
 </header>
 
@@ -44,41 +49,57 @@
 <div class="home">
   
 
-  <h2 class="post-list-heading">Posts</h2>
+  <h2 class="post-list-heading animated fadeInUp">Posts</h2>
   
-    <ul class="post-list"><li class="animated"><span class="post-meta">Mar 28, 2018</span>
+    <ul class="post-list"><li class="animated fadeInUp"><span class="post-meta">Mar 28, 2018</span>
         <h3>
           <a class="post-link" href="/2018/03/28/zaegsrgh.html">
             zaegsrgh
           </a>
-        </h3></li><li class="animated"><span class="post-meta">Mar 28, 2018</span>
+        </h3></li><li class="animated fadeInUp"><span class="post-meta">Mar 28, 2018</span>
         <h3>
           <a class="post-link" href="/2018/03/28/post1.html">
             post1
           </a>
-        </h3></li></ul></div>
+        </h3></li></ul><div>
+   <a href="#top"><i class="ion-ios-arrow-up"></i></a>
+ </div>
+</div>
+
 </section>
 
 <footer>
 
 	<div>
 
-		<h3>retrouvez nous aussi sur:</h3>
+		<h3 class="title-footer animated bounce zoomIn">retrouvez nous aussi sur:</h3>
 
 	</div>
 	
 	<div>
-		<ul class="icon-social">
+		<ul class="icon-social animated bounceInLeft" id="bottom">
 		<li><a href="#"><i class="ion-social-facebook"></i></a></li>
 		<li><a href="#"><i class="ion-social-twitter"></i></a></li>
 		<li><a href="#"><i class="ion-android-mail"></i></a></li>
 		<li><a href="#"><i class="ion-social-github"></i></a></li>
 	</ul>
 	</div>
+	<div class="copy">
+		<h4>copyright &copy; By Bibi</h4>
+	</div>
+
+
+
+
+
 
 </footer>
 
-
+ <script src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="/assets/script.js"></script>
 
 </body>
 </html>
